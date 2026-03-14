@@ -1,0 +1,42 @@
+{
+  "name": "soli-ui",
+  "version": "0.1.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --external react",
+    "dev": "npm run build -- --watch"
+  },
+  "description": "React UI 组件库",
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "component-library"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/li4065/soli-ui.git"
+  },
+  "homepage": "https://github.com/li4065/soli-ui#readme",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@types/react-window": "^1.8.8",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-window": "^1.8.11",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
